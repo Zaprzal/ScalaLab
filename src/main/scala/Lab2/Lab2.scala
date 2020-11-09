@@ -75,14 +75,15 @@ object Lab2 {
       return x*2
     }
     println("Wartość początkowa = 2 , wartosc po uruchomieni funkcji = " + funkcja(3 , mnoznik2))
-
-    var student = new Osoba("Paweł" , "Miokołaj") with Student
-    var pracownik = new Osoba("Paweł" , "Nowak") with Pracownik
+    println("-------------------")
+    println("Zadanie 5")
+    var student = new Osoba2 with Student
+    var pracownik = new Osoba2 with Pracownik
     pracownik._pensja = 2000
-    var pracownik2 = new Osoba("Paweł" , "Kowal") with Pracownik with Nauczyciel
+    var pracownik2 = new Osoba2 with Pracownik with Nauczyciel
     pracownik2._pensja = 2000
-    println(student._podatek)
-    println(pracownik._podatek)
-    println(pracownik2._podatek)
+    println(student.podatek)
+    println(pracownik.podatek)
+    println(pracownik2.podatek)
   }
 }

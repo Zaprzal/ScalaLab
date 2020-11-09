@@ -1,5 +1,5 @@
 package Lab2
 
-trait Student extends Osoba {
-  override val _podatek: Double = 0.0
+trait Student extends Osoba2 {
+  override def podatek: Double = 0.0
 }
