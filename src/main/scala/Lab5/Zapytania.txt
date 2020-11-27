@@ -1,0 +1,11 @@
+Zadanie1: MATCH (movie: Movie) return movie
+Zadanie2: MATCH (hugo: Person {name: "Hugo Weaving"})-[:ACTED_IN]->(movies: Movie) RETURN hugo, movies
+Zadanie3: MATCH (hugo: Person {name: "Hugo Weaving"})-[:ACTED_IN]->(movies: Movie)<-[:DIRECTED]-(directors) RETURN directors
+Zadanie4: MATCH (hugo: Person {name: "Hugo Weaving"})-[:ACTED_IN]->(movie: Movie)<-[:ACTED_IN]-(actors: Person) RETURN actors
+Zadanie5: MATCH (:Movie {title: "The Matrix"})<-[:ACTED_IN]-(person: Person)-[:ACTED_IN]->(movie: Movie) RETURN movie, collect(person) as actors
+Zadanie6: MATCH (person: Person)-[:ACTED_IN]->(movie: Movie) WITH person, count(movie) AS count WHERE count >= 1 RETURN person.name as name, count as movie_count
+Zadanie7: MATCH (person: Person)-[:WROTE]->(movie: Movie)<-[:DIRECTED]-(person) return person.name as name, movie.title as movie_title
+Zadanie8: MATCH (hugo: Person {name: 'Hugo Weaving'})-[:ACTED_IN]->(movie: Movie)<-[:ACTED_IN]-(keanu: Person {name: 'Keanu Reeves'}) RETURN movie.title as movie_title
+Zadanie9: 
+część a: MATCH (directors: Person)-[:DIRECTED]->(movie: Movie {title: 'Captain America: The First Avenger'})<-[:ACTED_IN]-(actors: Person) RETURN actors, movie, directors
+część b: MATCH (movie: Movie {title: 'Captain America: The First Avenger'})<-[:WROTE]-(writers) RETURN writers, movie

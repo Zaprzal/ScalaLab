@@ -1,0 +1,25 @@
+﻿[
+  {
+    "writers": {
+"identity": 173,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"name": "Christopher Markus",
+"born": 1967
+      }
+    },
+    "movie": {
+"identity": 171,
+"labels": [
+        "Movie"
+      ],
+"properties": {
+"tagline": "First Avenger",
+"title": "Captain America: The First Avenger",
+"released": 2011
+      }
+    }
+  }
+]
