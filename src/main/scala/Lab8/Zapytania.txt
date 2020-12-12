@@ -1,0 +1,27 @@
+Zadanie1:
+curl -XPUT -i -H "Content-Type: application/json" -d '{"car": "BMW" , "type": "F30" , "fuel": "BENZINE" , "year": 2018}' http://localhost:8098/buckets/s15619/keys/BMW > wynik1.txt
+curl -XPUT -i -H "Content-Type: application/json" -d '{"car": "AUDI" , "type": "A6" , "fuel": "BENZINE" , "year": 2003}' http://localhost:8098/buckets/s15619/keys/AUDI > wynik1.txt
+curl -XPUT -i -H "Content-Type: application/json" -d '{"car": "MERCEDES" , "type": "W124" , "fuel": "DIESEL" , "year": 1991}' http://localhost:8098/buckets/s15619/keys/MERCEDES > wynik1.txt
+curl -XPUT -i -H "Content-Type: application/json" -d '{"car": "VOLVO" , "type": "XC90" , "fuel": "DIESEL" , "year": 2006}' http://localhost:8098/buckets/s15619/keys/VOLVO > wynik1.txt
+curl -XPUT -i -H "Content-Type: application/json" -d '{"car": "MAZDA" , "type": "RX8" , "fuel": "BENZINE" , "year": 2004}' http://localhost:8098/buckets/s15619/keys/MAZDA > wynik1.txt
+Zadanie2:
+curl -i http://localhost:8098/buckets/s15619/keys/BMW > wynik2.txt
+Zadanie3:
+curl -XPUT -i -H "Content-Type: application/json" -d '{"car": "BMW" , "type": "F30" , "fuel": "BENZINE" , "year": 2018 , "isCrashed": false}' http://localhost:8098/buckets/s15619/keys/BMW > wynik3.txt
+Zadanie4:
+curl -XPUT -i -H "Content-Type: application/json" -d '{"car": "BMW" , "type": "F30" ,  "year": 2018 , "isCrashed": false}' http://localhost:8098/buckets/s15619/keys/BMW > wynik4.txt
+Zadanie5:
+curl -XPUT -i -H "Content-Type: application/json" -d '{"car": "BMW" , "type": "F30" ,  "year": 2018 , "isCrashed": true}' http://localhost:8098/buckets/s15619/keys/BMW > wynik5.txt
+Zadanie6:
+curl -XDELETE -i http://localhost:8098/buckets/s15619/keys/VOLVO > wynik6.txt
+Zadanie7:
+curl -i http://localhost:8098/buckets/s15619/keys/VOLVO > wynik7.txt
+Zadanie8:
+curl -i -H "Content-Type: application/json" -d '{"car": "VOLVO"}' http://localhost:8098/buckets/s15619/keys > wynik8.txt
+Zadanie9:
+--najpierw sprawdzam klucze 
+curl -i http://localhost:8098/buckets/s15619/keys?keys=true > wynik9.txt
+--odpytuję z automatycznie wygenerowanym kluczem
+curl -i http://localhost:8098/buckets/s15619/keys/HmL1pFn39bu0p52olu5bUUxxwzt >> wynik9.txt
+Zadanie10:
+curl -XDELETE -i http://localhost:8098/buckets/s15619/keys/HmL1pFn39bu0p52olu5bUUxxwzt > wynik10.txt

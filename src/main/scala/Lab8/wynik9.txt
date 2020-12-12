@@ -1,0 +1,21 @@
+HTTP/1.1 200 OK
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.8 (that head fake, tho)
+Date: Sat, 12 Dec 2020 12:38:25 GMT
+Content-Type: application/json
+Content-Length: 72
+
+{"keys":["BMW","MERCEDES","HmL1pFn39bu0p52olu5bUUxxwzt","AUDI","MAZDA"]}
+
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8ypz/fsaEu8kxMJQaZjAlMuaxMsSbet7kywIA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.8 (that head fake, tho)
+Link: </buckets/s15619>; rel="up"
+Last-Modified: Sat, 12 Dec 2020 12:36:47 GMT
+ETag: "3CgZD4PJYtXYdPfRF4TY42"
+Date: Sat, 12 Dec 2020 12:39:33 GMT
+Content-Type: application/json
+Content-Length: 16
+
+{"car": "VOLVO"}

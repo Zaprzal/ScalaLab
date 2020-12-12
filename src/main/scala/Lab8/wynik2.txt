@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8ypz/fsYkNgcwMJQaZjAlMuaxMlTpet7kywIA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.8 (that head fake, tho)
+Link: </buckets/s15619>; rel="up"
+Last-Modified: Sat, 12 Dec 2020 12:03:06 GMT
+ETag: "6JINSSmPtObYZX6osAaHJi"
+Date: Sat, 12 Dec 2020 12:16:54 GMT
+Content-Type: application/json
+Content-Length: 65
+
+{"car": "BMW" , "type": "F30" , "fuel": "BENZINE" , "year": 2018}
